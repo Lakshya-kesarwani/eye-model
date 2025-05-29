@@ -3,9 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+node_modules/
 # C extensions
 *.so
-
+node_modules/
 # Distribution / packaging
 .Python
 build/
@@ -172,3 +173,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+node_modules
