@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import App from './App';
-import App2 from './App2';
+import App from './pages/App';
+import App2 from './pages/App2';
 
 const App3 = () => {
   const [mode, setMode] = useState<'app1' | 'app2' | null>(null);

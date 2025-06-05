@@ -7,12 +7,12 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { CameraPermissionScreen } from './components/CameraPermissionScreen';
-import { GridOverlay } from './components/GridOverlay';
-import { TargetDot } from './components/TargetDot';
-import { RulerOverlay } from './components/RulerOverlay';
-import { CaptureControls } from './components/CaptureControls';
-import { useCapture } from './hooks/useCapture';
+import { CameraPermissionScreen } from '../components/CameraPermissionScreen';
+import { GridOverlay } from '../components/GridOverlay';
+import { TargetDot } from '../components/TargetDot';
+import { RulerOverlay } from '../components/RulerOverlay';
+import { CaptureControls } from '../components/CaptureControls';
+import { useCapture } from '../hooks/usePredict';
 
 // Constants
 const { width, height } = Dimensions.get('screen');
@@ -24,13 +24,14 @@ const GRID_CONFIG = {
 };
 
 const CAPTURE_CONFIG = {
-  captureIntervalMs: 500, 
+  captureIntervalMs: 1000, 
   framesPerTarget: 10,
 };
 
 const totalCells = GRID_CONFIG.rows * GRID_CONFIG.cols;
 const cellWidth = width / GRID_CONFIG.cols;
 const cellHeight = height / GRID_CONFIG.rows;
+
 export default function App() {
   const [permission, requestPermission] = useCameraPermissions();
 
@@ -59,7 +60,6 @@ export default function App() {
   }
 
 
-
   return (
     <SafeAreaView style={styles.container}>
       <CameraView
@@ -73,6 +73,8 @@ export default function App() {
         height={height}
         rows={GRID_CONFIG.rows}
         cols={GRID_CONFIG.cols}
+        isApp2={true}
+        targetIndex={targetIndex}
       />
 
       <TargetDot
