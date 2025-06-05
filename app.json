@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "dataset-app",
-    "slug": "dataset-app",
+    "name": "GazeType App",
+    "slug": "GazeType App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons50.png",
+    "icon": "./assets/eye.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/icons50.png",
+      "image": "./assets/eye.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons50.png",
+        "foregroundImage": "./assets/eye.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
