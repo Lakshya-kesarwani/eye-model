@@ -59,7 +59,7 @@ export const useCapture = ({
                 });
 
                 const label = `cell-${targetIndex}`;
-                await axios.post('https://8e55-14-139-98-164.ngrok-free.app/upload', {
+                await axios.post('https://b95e-14-139-98-164.ngrok-free.app/upload', {
                     image: base64,
                     x: dotX,
                     y: dotY,
