@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-// Import components
 import { CameraPermissionScreen } from './components/CameraPermissionScreen';
 import { GridOverlay } from './components/GridOverlay';
 import { TargetDot } from './components/TargetDot';
