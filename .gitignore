@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 node_modules/
+dataset/
+dataset_cropped/
 # C extensions
 *.so
 node_modules/
