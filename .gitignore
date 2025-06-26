@@ -4,12 +4,13 @@ __pycache__/
 *$py.class
 
 node_modules/
+node_modules/
 dataset/
 dataset_cropped/
 temp/
 # C extensions
 *.so
-node_modules/
+anaconda_projects/
 dataset/
 # Distribution / packaging
 .Python
