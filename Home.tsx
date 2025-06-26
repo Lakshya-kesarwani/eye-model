@@ -3,11 +3,13 @@ import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native';
 import App from './pages/App';
 import App2 from './pages/App2';
 
-const App3 = () => {
+import App3 from './pages/App3'; // Assuming App3 is in the same directory
+const Home = () => {
   const [mode, setMode] = useState<'app1' | 'app2' | null>(null);
 
   if (mode === 'app1') return <App />;
   if (mode === 'app2') return <App2 />;
+  if (mode === 'app3') return <App3 />;
 
   return (
     <View style={styles.container}>
@@ -19,6 +21,9 @@ const App3 = () => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={() => setMode('app2')}>
         <Text style={styles.buttonText}>Test Application</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => setMode('app3')}>
+        <Text style={styles.buttonText}>VideoMode</Text>
       </TouchableOpacity>
     </View>
   );
@@ -38,4 +43,4 @@ const styles = StyleSheet.create({
   buttonText: { color: '#fff', fontSize: 20, fontWeight: 'bold' },
 });
 
-export default App3;
+export default Home;

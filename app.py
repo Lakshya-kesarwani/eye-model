@@ -19,8 +19,8 @@ CORS(app)  # Allow requests from mobile app
 DATASET_DIR = 'dataset'
 LOG_FILE = 'upload_log.txt'
 
-# Load the trained model
-MODEL_PATH = os.getcwd()+'/saved_models/Model_1_Simple_CNN_200_50_20250604_160555.h5'  # Update with your best model path
+# Load the trained model 
+MODEL_PATH = 'saved_models\Model_1_Simple_CNN_200_50_20250604_160555.h5'  # Update with your best model path
 MODEL = tf.keras.models.load_model(MODEL_PATH, custom_objects={'mse': MeanSquaredError()},compile=False)
 
 
@@ -67,6 +67,7 @@ def predict():
         # Decode the base64 image
         result = predict_image(filepath,MODEL)
         print(result)
+        os.delete(filepath)  # Clean up the temporary file
         label = result['predicted_label']
         
         # Return the prediction
