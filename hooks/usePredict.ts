@@ -1,4 +1,4 @@
-// hooks/useCapture.ts
+// hooks/usePredict.ts
 import { useRef, useEffect, useState } from 'react';
 import axios from 'axios';
 import type { CameraViewRef } from 'expo-camera';
