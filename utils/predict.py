@@ -6,7 +6,7 @@ import mediapipe as mp
 from keras.losses import MeanSquaredError
 
 # Load the trained model
-# MODEL_PATH = 'saved_models\Model_1_Simple_CNN_200_50_20250604_160555.h5'
+# MODEL_PATH = '../../Model_1_Simple_CNN_200_50_20250606_113059.h5'
 # model = tf.keras.models.load_model(MODEL_PATH, custom_objects={'mse': MeanSquaredError()})
 
 # Grid configuration
@@ -175,9 +175,9 @@ def predict_image(image_path,model):
         'predicted_label': predicted_label
     }
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 #     # Test on the original dataset
-    test_on_original_dataset()
+    # test_on_original_dataset()
 
     # Example usage of predict_image function
     

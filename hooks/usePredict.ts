@@ -1,4 +1,4 @@
-// hooks/useCapture.ts
+// hooks/usePredict.ts
 import { useRef, useEffect, useState } from 'react';
 import axios from 'axios';
 import type { CameraViewRef } from 'expo-camera';
@@ -47,7 +47,7 @@ export const useCapture = ({
                 encoding: FileSystem.EncodingType.Base64,
             });
 
-            const response = await axios.post('https://bf20-14-139-98-164.ngrok-free.app/predict', {
+            const response = await axios.post('https://1cc1-14-139-98-164.ngrok-free.app/predict', {
                 image: base64,
             });
             console.log(response.data)

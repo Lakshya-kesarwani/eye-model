@@ -2,13 +2,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+node_modules/
 node_modules/
 dataset/
 dataset_cropped/
+temp/
+.expo/
 # C extensions
 *.so
-node_modules/
+anaconda_projects/
 dataset/
 # Distribution / packaging
 .Python
@@ -176,4 +178,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+node_modules
 node_modules
