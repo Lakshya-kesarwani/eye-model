@@ -95,8 +95,10 @@ Make sure to allow camera access on your device.
 
 ## 📸 Screenshots
 
-![UI Preview](./assets/front.png)
-![Gaze Tracker](./assets/preview.png)
+<p float="left">
+  <img src="./assets/front.png" width="300"/> 
+  <img src="./assets/preview.jpg" width="300"/>
+</p>
 
 ---
 
