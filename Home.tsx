@@ -5,7 +5,7 @@ import App2 from './pages/App2';
 
 import App3 from './pages/App3'; // Assuming App3 is in the same directory
 import App4 from './pages/App4'; // Assuming App4 is in the same directory
-const Home = () => 
+const Home = () => {
   const [mode, setMode] = useState<'app1' | 'app2' |'app3'| null>(null);
 
   if (mode === 'app1') return <App />;
